@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 id="h1">Tip Calculator</h1>
+
+        <div class="money">
+            <label for="number" class="border1"> Please enter amount $USD:</label>
+                <input class="border-1" type="text" id="usd" name="money" minlength="1" maxlength="20" required>
+        </div>
+
+        <div class="btn">
+            <label for="number" class="border2"> Please enter tip %:</label>
+                <input class="border-2" type="text2" id="usd2" name="money2" minlength="1" maxlength="20" required>
+            <button onclick="tip()" class="btn2" >Submit</button>  
+        </div>
+
+        <div class="reset">
+            <button onclick="reset()" id="reset" >Reset</button>  
+        </div>
+
+
+        <h2 class="h2">Tip Ammount:</h2>
+        <h2 id="result">$0</h2>
+        <h2 class="tamount">Total Ammount:</h2>
+        <h2 id="result2">$0</h2>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
